@@ -1,0 +1,20 @@
+doctype html
+html
+    head
+        title Homepage
+        link(rel="stylesheet", href="/css/style.css")
+    body
+        h1 Driver List
+        a(href="/update-cobj") Add/Edit Character  List
+        table
+            thead
+                tr
+                    th Character Name
+                    th Show Name
+                    th Liking Number
+            tbody
+                each character in characters
+                    tr
+                        td= character.properties.character_name
+                        td= character.properties.show_name
+                        td= character.properties.liking_number
