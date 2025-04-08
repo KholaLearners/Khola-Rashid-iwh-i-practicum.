@@ -8,7 +8,7 @@ app.use(express.static(__dirname + '/public'));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-const PRIVATE_APP_ACCESS = "Code";
+const PRIVATE_APP_ACCESS = "Token";
 console.log(PRIVATE_APP_ACCESS);
 // Route 1: Display Character List
 app.get('/', async (req, res) => {
