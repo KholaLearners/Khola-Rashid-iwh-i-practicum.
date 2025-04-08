@@ -1,0 +1,21 @@
+doctype html
+html
+    head
+        title Update Driver List
+        link(rel="stylesheet", href="/css/style.css")
+    body
+        .form-wrapper
+            h1 Add/Edit Driver List
+            form(action="/update-cobj", method="post")
+                div
+                    label(for="character_name") Character Name:
+                    input(type="text", id="character_name", name="character_name", required)
+                div
+                    label(for="show_name") Show name:
+                    input(type="text", id="show_name", name="show_name", required)
+                div
+                    label(for="liking_number") Liking Number:
+                    input(type="text", id="liking_number", name="liking_number", required)
+                div
+                    input(type="submit", value="Submit")
+            a(href="/") Return to the Homepage
